@@ -130,7 +130,6 @@ def render(mesh_trimesh):
             #v.viewer_flags["caption"][0]["text"] = keys[counter]
             node = nodes[counter]
             # @ TODO solve rotation issue -> camera should look at the center of the object
-            node.pose[:3, 3] = np.array([0, 0, 0])
             # node.rotation = np.array([ 0,-0.2334454, 0, 0.9723699])
             # node.translation = np.array([30, 0, 0])
             scene.add_node(node)

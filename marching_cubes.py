@@ -87,7 +87,7 @@ def show(verts, faces):
 def run():
     """Main function"""
     # open image
-    image = open_image("images/0x0-Tesla_T_CoolGrey.png")
+    image = open_image("images/logo.png")
     # resize image
     image = resize_image(image)
     # rotate image 90 degrees

@@ -25,3 +25,13 @@ To run the program, simply run the following command:
 ``` 
 python render.py
 ```
+
+## Example
+
+The following example shows how the logo:
+
+![](images/logo.png)
+
+is converted into a 3D mesh.
+
+![](images/example.png)
