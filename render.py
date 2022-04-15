@@ -74,7 +74,7 @@ def get_flags():
     viewer_flags = {
         'mouse_pressed': False,
         'rotate': True,
-        'rotate_rate': np.pi / 6.0,
+        'rotate_rate': 1.25,
         'rotate_axis': np.array([1.0, 0.0, 0.0]),
         'record': False,
         'use_raymond_lighting': True,
@@ -83,7 +83,7 @@ def get_flags():
         'use_perspective_cam': True,
         'save_directory': '',
         'window_title': 'Tesla Logo',
-        'refresh_rate': 15.0,
+        'refresh_rate': 30.0,
         'fullscreen': False,
         'show_world_axis': False,
         'show_mesh_axes': False,
@@ -101,7 +101,7 @@ def render(mesh_trimesh):
 
     nodes = create_meshes(mesh_trimesh)
 
-    scene = pyrender.Scene(ambient_light=(0.5, 0.5, 0.5), bg_color=(0.1, 0.1, 0.1))
+    scene = pyrender.Scene(ambient_light=(0.5, 0.5, 0.5), bg_color=(0.2, 0.2, 0.2))
 
     scene.add_node(nodes[0])
 
@@ -117,7 +117,7 @@ def render(mesh_trimesh):
     start = time.time()
     counter = 0
     while True:
-        if time.time() - start > 8:
+        if time.time() - start > 5:
 
             start = time.time()
             v.render_lock.acquire()
