@@ -1,0 +1,5 @@
+trimesh~=3.10.8
+pyrender~=0.1.45
+numpy~=1.22.3
+matplotlib~=3.5.1
+scikit-image~=0.19.2
